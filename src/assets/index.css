@@ -28,10 +28,10 @@
 
 
 .pc-c {
-  color: #FF7F11;
+  color: #ff4d00;
 }
 .pc-bg {
-  background-color: #FF7F11;
+  background-color: #ff4d00;
 }
 
 .sc-c {
@@ -157,6 +157,14 @@
  
 @layer base {
   :root {
+    --primary-color: #ff4d00;
+    --primary-color-active: #d64304e1;
+    --primary-color-hover: #ff4d00ce;
+
+    --secondary-color: #666361;
+    --secondary-color-active: #53514f;
+    --secondary-color-hover: #666361d0;
+
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
  

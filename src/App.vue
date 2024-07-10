@@ -17,7 +17,5 @@ img#home-logo {
   width: 100px;
   height: auto;
 }
-body {
-  
-}
+
 </style>
