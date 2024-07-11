@@ -1,9 +1,10 @@
 <template>
-  <div style="width: 100%; height: 1px; background-color: white; "></div>
+
   <section 
     id="home-background" 
     class="flex flex-col justify-center items-center h-screen p-1 "
   >
+  <SplashLoading />
     <button id="home-card-not-login" class="w-72 h-64 flex justify-center items-center m-4 rounded-lg home-card ">
       <h1 class="text-2xl font-bold text-center">INICIAR SEM CADASTRO</h1>
       
@@ -18,8 +19,13 @@
 </template>
 
 <script>
+import SplashLoading from '@/components/splash/SplashLoading.vue'
+
 export default {
   name: 'Home', 
+  components: {
+    SplashLoading
+  }
 }
 </script>
 
@@ -47,7 +53,7 @@ export default {
   background-color: var(--secondary-color-hover);
 }
 .home-card {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.278);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.298);
 }
 
 #home-svg-signin {
