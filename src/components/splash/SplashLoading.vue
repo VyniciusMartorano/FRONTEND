@@ -2,9 +2,8 @@
 <div id="splash-container">
     <div id="splash-container-logo" class="flex justify-center items-center">
         <img src="./../../assets/logo-vertical.png" alt="" id="logo-splash"></div>
-    <div id="spinner">
-        
-    </div>
+    <div id="spinner-orange"></div>
+    <div id="spinner-white"></div>
 </div>
 </template>
 
@@ -36,7 +35,7 @@ name: 'SplashLoading',
     display: flex
 }
 
-#spinner{
+#spinner-orange {
   height: 120px;
   width: 120px;
   position: fixed;
@@ -44,12 +43,28 @@ name: 'SplashLoading',
   border: 10px solid;
   border-color: var(--primary-color) transparent var(--primary-color) transparent;
   border-radius: 50%;
-  animation: spin 1.3s linear infinite;
+  animation: spin 1.5s linear infinite;
 }
+#spinner-white {
+  height: 150px;
+  width: 150px;
+  position: fixed;
+  top: auto;
+  border: 10px solid;
+  border-color: white transparent white transparent;
+  border-radius: 50%;
+  animation: spin_white 1.5s linear infinite;
+}
+
 
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes spin_white {
+  to {
+    transform: rotate(-360deg);
   }
 }
 </style>
