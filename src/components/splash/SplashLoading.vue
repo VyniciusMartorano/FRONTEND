@@ -51,7 +51,7 @@ name: 'SplashLoading',
   position: fixed;
   top: auto;
   border: 10px solid;
-  border-color: white transparent white transparent;
+  border-color:  white transparent white transparent;
   border-radius: 50%;
   animation: spin_white 1.5s linear infinite;
 }
