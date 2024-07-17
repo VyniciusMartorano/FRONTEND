@@ -1,32 +1,36 @@
 <template>
-
-  <section 
-    id="home-background" 
-    class="flex flex-col justify-center items-center h-screen p-1 "
-  >
-  <SplashLoading v-if="$globalState.isLoading"/>
-    <button id="home-card-not-login" class="w-72 h-64 flex justify-center items-center m-4 rounded-lg home-card ">
-      <h1 class="text-2xl font-bold text-center">INICIAR SEM CADASTRO</h1>
-      
-    </button>
+  <div>
+    <Nav />
+    <section
+      id="home-background"
+      class="flex flex-col justify-center items-center h-screen p-1 "
+    >
     
-    <button id="home-card-sigin" class="w-72 h-64 flex-col flex justify-center items-center m-4 rounded-lg home-card" @click="startsWithLogin">
-      <div class="flex">
-        <h1 class="text-2xl font-bold text-center">INICIAR COM CADASTRO</h1>
-      </div>
-      <div class="flex"><img id="home-svg-signin" src="./../../assets/svgs/sign-in-vector.svg" alt=""></div>
-    </button>
-  </section>
+    <SplashLoading v-if="$globalState.isLoading"/>
+      <button id="home-card-not-login" class="w-72 h-64 flex justify-center items-center m-4 rounded-lg home-card ">
+        <h1 class="text-2xl font-bold text-center">INICIAR SEM CADASTRO</h1>
+      </button>
+    
+      <button id="home-card-sigin" class="w-72 h-64 flex-col flex justify-center items-center m-4 rounded-lg home-card" @click="startsWithLogin">
+        <div class="flex">
+          <h1 class="text-2xl font-bold text-center">INICIAR COM CADASTRO</h1>
+        </div>
+        <div class="flex"><img id="home-svg-signin" src="./../../assets/svgs/sign-in-vector.svg" alt=""></div>
+      </button>
+    </section>
+    
+  </div>
 </template>
 
 <script>
 import SplashLoading from '@/components/splash/SplashLoading.vue'
-
+import Nav from '@/components/nav/Nav.vue'
 
 export default {
   name: 'Home', 
   components: {
-    SplashLoading
+    SplashLoading,
+    Nav
   },
   methods: {
     startsWithLogin() {
@@ -74,6 +78,7 @@ export default {
 #home-background {
   background-color: #e7e7e7;
 }
+
 
 
 </style>
