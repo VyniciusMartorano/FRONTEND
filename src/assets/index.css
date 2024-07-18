@@ -40,7 +40,9 @@
 .sc-bg {
   background-color: #ead637;
 }
-
+.not-select {
+  user-select: none;
+}
 
 
 @tailwind base;

@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/pages/home/Home.vue'
+import Inicio from '@/pages/Inicio/Inicio.vue'
 import Dashboard from '@/pages/dashboard/Dashboard.vue'
 import Cookies from 'js-cookie'
 
@@ -8,8 +9,12 @@ const publicRoutes = [
     path: '/',
     name: 'Home',
     component: Home,
-    childrens: [
-      
+    children: [
+      {
+        path: 'inicio',
+        name: 'Inicio',
+        component: Inicio
+      }
     ]
   }
 ]

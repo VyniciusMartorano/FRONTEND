@@ -32,7 +32,8 @@ name: 'SplashLoading',
 
 #logo-splash {
     height: 60px;
-    display: flex
+    display: flex;
+    user-select: none;
 }
 
 #spinner-orange {
