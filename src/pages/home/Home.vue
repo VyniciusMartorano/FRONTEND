@@ -24,10 +24,6 @@ export default {
 
 <style scoped>
 
-#home-background {
-  background-color: #e7e7e7;
-}
-
 
 
 </style>

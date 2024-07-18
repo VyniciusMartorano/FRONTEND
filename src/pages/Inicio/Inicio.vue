@@ -24,7 +24,8 @@
     },
     methods: {
     startsWithLogin() {
-      this.$globalState.isLoading = !this.$globalState.isLoading
+      //this.$globalState.isLoading = !this.$globalState.isLoading
+      this.$router.push('/cadastre-se')
     }
   }
   }

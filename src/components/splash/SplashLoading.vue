@@ -1,7 +1,7 @@
 <template>
 <div id="splash-container">
     <div id="splash-container-logo" class="flex justify-center items-center">
-        <img src="./../../assets/logo-vertical.png" alt="" id="logo-splash"></div>
+        <img src="./../../assets/svgs/logo-vertical.svg" alt="" id="logo-splash"></div>
     <div id="spinner-orange"></div>
     <div id="spinner-white"></div>
 </div>

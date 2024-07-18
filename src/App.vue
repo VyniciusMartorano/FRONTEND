@@ -8,7 +8,9 @@
 </template>
 <script setup lang="js">
 </script>
-<style scoped>
-
+<style >
+body {
+    background-color: #e7e7e7;
+}
 
 </style>

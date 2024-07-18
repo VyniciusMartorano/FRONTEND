@@ -1,7 +1,7 @@
 <template>
     <header  class="flex justify-center items-center pc-bg w-full h-14" > 
       <nav>
-        <img src="./../../assets/LIVE_BIKE_LOGO-removebg-preview.png" alt="" id="nav-logo">
+        <img src="./../../assets/svgs/logo-horizontal.svg" alt="" id="nav-logo">
       </nav>
     </header>
 </template>
