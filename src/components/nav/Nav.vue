@@ -1,22 +1,75 @@
 <template>
-    <header  class="flex justify-center items-center pc-bg w-full h-14" > 
-      <nav>
-        <img src="./../../assets/svgs/logo-horizontal.svg" alt="" id="nav-logo">
+  <header class="pc-bg text-black shadow-md">
+    <div class="container mx-auto p-4 flex justify-between items-center">
+      <div class="">
+        <img
+          src="./../../assets/svgs/logo-horizontal.svg"
+          class=""
+          id="nav-logo"
+        />
+      </div>
+      <nav
+        :class="{ block: isOpen, hidden: !isOpen }"
+        class="w-full md:w-auto md:flex md:items-center"
+      >
+        <ul
+          class="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0"
+        >
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Bicicletas</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Onde estamos</a></li>
+        </ul>
       </nav>
-    </header>
+      <div>
+        <button
+          class="px-[6.73px] py-[6.73px] text-black border border-black rounded-[3.366px]"
+        >
+          Entrar
+        </button>
+      </div>
+      <button @click="toggleMenu" class="md:hidden text-2xl focus:outline-none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+    </div>
+  </header>
 </template>
 
 <script>
 export default {
-name: 'Nav', 
-}
+  name: "ResponsiveHeader",
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isOpen = !this.isOpen;
+    },
+  },
+};
 </script>
 
 <style scoped>
-
+.container {
+  max-width: 1200px; /* Opcional, para limitar a largura do contêiner */
+}
 img#nav-logo {
   width: 100px;
   height: auto;
 }
-
 </style>

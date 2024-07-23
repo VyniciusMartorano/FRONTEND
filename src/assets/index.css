@@ -21,8 +21,8 @@
 
 
 * {
-  font-family: 'Montserrat-ExtraBold', sans-serif;
-  font-weight: 700;
+  font-family:  'Inter', sans-serif;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -51,7 +51,7 @@
  
 @layer base {
   :root {
-    --primary-color: #f95c3f;
+    --primary-color: #F95C3F;
     --primary-color-active: #e05339;
     --primary-color-hover: #c74a32;
 
