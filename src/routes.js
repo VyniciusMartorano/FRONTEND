@@ -12,11 +12,6 @@ const publicRoutes = [
     component: Home,
     children: [
       {
-        path: 'inicio',
-        name: 'Inicio',
-        component: Inicio
-      },
-      {
         path: 'cadastre-se',
         name: 'Cadastro',
         component: Cadastro

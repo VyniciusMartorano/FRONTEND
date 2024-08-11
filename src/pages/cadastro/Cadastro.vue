@@ -1,16 +1,23 @@
 <template>
-    <div class="flex justify-center p-4">
-        <Card class="w-8/12">
+    <div class="flex justify-center p-2">
+        <Card class="w-9/12">
             <CardHeader>
-                <CardTitle>Card Title</CardTitle>
-                <CardDescription>Card Description</CardDescription>
+                <CardTitle>Login</CardTitle>
             </CardHeader>
             <CardContent>
-                Card Content
+                <div class="">
+                    <label>CPF</label>
+                    <Input type="text" class="mt-1" placeholder="shadcn" v-bind="login" />
+                    
+                </div>
+                <div class="mt-2">
+                    <label>Senha</label>
+                    <Input class="mt-1" type="text" placeholder="password" v-bind="login" />
+                </div>
+                <CustomButton class="mt-5" />
+
             </CardContent>
-            <CardFooter>
-                Card Footer
-            </CardFooter>
+           
         </Card>
     </div>
 </template>
@@ -24,20 +31,29 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import CustomButton from '@/components/custombutton/CustomButton.vue';
 
-
-export default {name: 'Cadastro', 
-components: {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle
-},
-methods: {
-
-}
+export default {
+    name: 'Cadastro', 
+    components: {
+        Card,
+        CardContent,
+        CardDescription,
+        CardFooter,
+        CardHeader,
+        CardTitle,
+        Input,
+        CustomButton
+    },
+    data() {
+        return {
+            login: ''
+        };
+    },
+    methods: {
+        
+    }
 }
 </script>
 

@@ -27,8 +27,7 @@
       //this.$globalState.isLoading = !this.$globalState.isLoading
       this.$router.push('/cadastre-se')
     }
-  }
-  }
+  }  }
   </script>
   
   <style scoped>
