@@ -45,7 +45,8 @@
                     <label for="senha">Confirme sua Senha</label>
                     <InputText  type="password" id="confirmacao_senha" v-model="cadastro.confirmacao_senha" class="w-full" />
                 </FloatLabel>
-                <Button class="mt-3 w-full" label="Cadastrar" icon="pi pi-sign-in" />
+                <Button class="mt-3 w-full" label="Cadastrar" icon="pi pi-sign-in" @click="cadastrar" />
+                <div class="flex justify-end mt-1"><span id="label-cadastro">Ja possui uma conta? <span id="link-cadastro" @click="formMode = formModeEnum.LOGIN">Entrar</span></span></div>
             </template>
         </Card>
 
@@ -56,6 +57,8 @@
 <script>
 
 import Card from 'primevue/card';
+import Cookies from 'js-cookie'
+
 
 export default {
     name: 'Login', 
@@ -82,7 +85,10 @@ export default {
         };
     },
     methods: {
-
+        cadastrar() {
+            Cookies.set('token', 'token_ficticio');
+            this.$router.push('/dashboard')
+        }
     }
 }
 </script>
