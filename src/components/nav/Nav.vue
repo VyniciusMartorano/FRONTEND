@@ -34,7 +34,7 @@
           <Button v-if="themeIsBlack" rounded @click="toggleDarkMode()" icon="pi pi-sun"  />
           <Button v-else rounded @click="toggleDarkMode()" icon="pi pi-moon" />
         </div>
-        <button @click="toggleMenu" class="md:hidden text-2xl focus:outline-none ">
+        <button outlined @click="toggleMenu" class="md:hidden text-2xl focus:outline-none ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
