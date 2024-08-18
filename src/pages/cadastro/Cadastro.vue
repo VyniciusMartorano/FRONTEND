@@ -1,50 +1,32 @@
 <template>
     <div class="flex justify-center p-2">
         <Card class="w-9/12">
-            <CardHeader>
-                <CardTitle>Login</CardTitle>
-            </CardHeader>
-            <CardContent>
-                <div class="">
+            <template #title>Login</template>
+                <template #content>
+                    <div class="">
                     <label>CPF</label>
-                    <Input type="text" class="mt-1" placeholder="shadcn" v-bind="login" />
+                    <InputText  class="mt-1"  v-model="login" />
                     
                 </div>
                 <div class="mt-2">
                     <label>Senha</label>
-                    <Input class="mt-1" type="text" placeholder="password" v-bind="login" />
+                    <InputText class="mt-1"  v-model="login" />
                 </div>
-                <CustomButton class="mt-5" />
-
-            </CardContent>
-           
+                <Button class="mt-5" label="Login com google" icon="pi pi-google" />
+                </template>
         </Card>
     </div>
 </template>
 
 <script>
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import CustomButton from '@/components/custombutton/CustomButton.vue';
+import InputText from 'primevue/inputtext';
+import Card from 'primevue/card';
 
 export default {
     name: 'Cadastro', 
     components: {
-        Card,
-        CardContent,
-        CardDescription,
-        CardFooter,
-        CardHeader,
-        CardTitle,
-        Input,
-        CustomButton
+        InputText,
+        Card
     },
     data() {
         return {
