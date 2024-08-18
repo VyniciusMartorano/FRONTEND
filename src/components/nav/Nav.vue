@@ -86,7 +86,7 @@ export default {
 
 <style scoped>
 .container {
-  max-width: 1200px; /* Opcional, para limitar a largura do contêiner */
+  max-width: 1200px; 
 }
 img#nav-logo {
   width: 100px;

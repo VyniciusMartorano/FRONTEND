@@ -9,11 +9,10 @@
                 </FloatLabel>
                 <FloatLabel  class="mt-5">
                     <label for="senha">Senha</label>
-                    <InputText id="senha" v-model="senha" class="w-full" />
+                    <InputText type="password" id="senha" v-model="senha" class="w-full" />
                 </FloatLabel>
                 <Button class="mt-5 w-full" label="Login" icon="pi pi-sign-in" />
                 <Button class="mt-2 w-full" label="Login com Google" icon="pi pi-google" />
-                
                
 
             </template>
